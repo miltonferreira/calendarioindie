@@ -1,4 +1,4 @@
-const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSfHOQtt3_7NqBgFy5QO8w2-p7dn6iWH79NM-bpcGV67wey_w0L0778o431lFFMOBGweAwiPsBvwoDx/pub?output=csv'; // link público do Google Sheets CSV
+const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSfHOQtt3_7NqBgFy5QO8w2-p7dn6iWH79NM-bpcGV67wey_w0L0778o431lFFMOBGweAwiPsBvwoDx/pub?output=csv"; // link público do Google Sheets CSV
 let allData = [];
 
 const estadoFilter = document.getElementById('estadoFilter');
@@ -70,5 +70,6 @@ function renderTable() {
 
 estadoFilter.addEventListener('change', renderTable);
 cidadeFilter.addEventListener('change', renderTable);
+
 
 loadCSV();
